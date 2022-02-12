@@ -48,8 +48,8 @@ app.post("/imageurl", (req, res) => {
 
 
 
-app.listen(3000, ()=>{
-	console.log("______________\napp is running yooo\n______________\n")
+app.listen(process.env.PORT || 3000, ()=>{
+	console.log(`app is runnning on port ${process.env.PORT}`)
 })
 
 
